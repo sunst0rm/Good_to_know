@@ -106,3 +106,5 @@ Becoming root with python script and with no read/write rights:
 and executing a script with path given in `sudo -l` e.g `sudo -u root /usr/bin/python /home/script.py`
 
 
+*
+`wget -r` downloads all files of a directory
