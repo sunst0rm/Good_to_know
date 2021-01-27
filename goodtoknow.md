@@ -128,3 +128,6 @@ TL;DR We run netcat and inject a payload in Timelion, run it and open Canvas to 
 FINDING CAPABILITIES
 
 `getcap -r / 2>/dev/null` 
+
+`2>/dev/null` -
+--> discards all STDERR
