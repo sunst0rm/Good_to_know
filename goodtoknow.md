@@ -131,3 +131,7 @@ FINDING CAPABILITIES
 
 `2>/dev/null` -
 --> discards all STDERR
+
+
+*
+Nessus is an automated scanner which runs on port `8834`. It mixes functions of nmap, nikto or zap together and provides many profiles calles `Policies`
