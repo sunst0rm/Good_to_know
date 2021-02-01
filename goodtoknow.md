@@ -140,3 +140,10 @@ Nessus is an automated scanner which runs on port `8834`. It mixes functions of 
 *
 Finding password for admin based on request and error message:
 `hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.63.60 http-post-form "/admin/index.php:user=^USER^&pass=^PASS^:Username or password invalid" -V`
+
+*
+Sometimes in order to access a hidden website, it is needed to turn off javascript in a browser.
+
+In Firefox:
+
+`about:config` ---> `javascript enabled` ---> change to `false`
