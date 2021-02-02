@@ -193,3 +193,11 @@ Looks for for a 'word' and shows in which line it is:
 
 *
 It is possible to bruteforce jwt tokens with `jwt-tool`
+
+
+*
+To launch script from anywhere it is not needed to add it to path but to:
+
+`/usr/bin` and `/usr/local/bin`
+
+It needs correct permission before `chmod 755`
