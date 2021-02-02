@@ -206,4 +206,4 @@ It needs correct permission before `chmod 755`
 *
 Pushing files from one directory without constantly repeating commands:
 
-`git commit -a -m "message here" & git push origin main`
+`git commit -a -m "message here" && git push origin main`
