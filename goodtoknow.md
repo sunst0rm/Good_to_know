@@ -201,3 +201,9 @@ To launch script from anywhere it is not needed to add it to path but to:
 `/usr/bin` and `/usr/local/bin`
 
 It needs correct permission before `chmod 755`
+
+
+*
+Pushing files wfrom one directory without constantly repeating commands:
+
+`git commit -a -m "message here" & git push origin main`
