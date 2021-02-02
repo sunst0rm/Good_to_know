@@ -176,4 +176,20 @@ In Firefox:
 
 `about:config` --> `javascript enabled` --> change to `false`
 
-this is a test co count as contribution (after fixing credentials)
+
+*
+Looking for 'word' inside a file:
+
+`egrep 'word' file.txt` 
+
+Shows how many times 'word' appears in a file:
+
+`egrep -n 'word' file txt `
+
+Looks for for a 'word' and shows in which line it is:
+
+`grep -Hrn 'word' /path`
+
+
+*
+It is possible to bruteforce jwt tokens with `jwt-tool`
