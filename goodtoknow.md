@@ -207,3 +207,11 @@ It needs correct permission before `chmod 755`
 Pushing files from one directory without constantly repeating commands:
 
 `git commit -a -m "message here" && git push origin main`
+
+
+
+*
+While there is LFI, it is important to check if link is vulnerable to `php://filter`
+
+`php://filter/convert.base64-encode/resource`
+
