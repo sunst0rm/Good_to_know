@@ -215,3 +215,23 @@ While there is LFI, it is important to check if link is vulnerable to `php://fil
 
 `php://filter/convert.base64-encode/resource`
 
+
+
+*
+TCP - to demonstrate computer networking, there was introduced a model called OSI (Open Systems Interconnection), it consists of 7 layers:
+
+APPLICATION
+
+PRESENTATION
+
+SESSION
+
+TRANSPORTS
+
+NETWORK
+
+DATA LINK
+
+PHYSICAL
+
+To remember it `Anxious Pale Shakespeare Treated Nervously Drinks Patiently`
