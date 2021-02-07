@@ -218,7 +218,7 @@ While there is LFI, it is important to check if link is vulnerable to `php://fil
 
 
 *
-TCP - to demonstrate computer networking, there was introduced a model called OSI (Open Systems Interconnection), it consists of 7 layers:
+To demonstrate computer networking, there was introduced a model called OSI (Open Systems Interconnection), it consists of 7 layers:
 
 APPLICATION
 
@@ -235,3 +235,16 @@ DATA LINK
 PHYSICAL
 
 To remember it `Anxious Pale Shakespeare Treated Nervously Drinks Patiently`
+
+
+
+*
+TCP model is as follows:
+
+Application
+
+Transport
+
+Internet
+
+Network inteface
