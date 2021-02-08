@@ -239,7 +239,7 @@ To remember it `Anxious Pale Shakespeare Treated Nervously Drinks Patiently`
 
 
 *
-TCP model is as follows:
+TCP (Transmission Control Protocol) model is as follows:
 
 Application
 
@@ -248,3 +248,12 @@ Transport
 Internet
 
 Network inteface
+
+It is a three-way-handshake = SYN - SYN/ACK - ACK
+
+
+
+*
+`strcmp` compares a string with another in C
+
+`ltrace` is a tool great for reverse which runs an ELF step by step
