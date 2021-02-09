@@ -257,3 +257,19 @@ It is a three-way-handshake = SYN - SYN/ACK - ACK
 `strcmp` compares a string with another in C
 
 `ltrace` is a tool great for reverse which runs an ELF step by step
+
+`radare2 -d file` opens binary in debugging mode
+
+`aaa` analyze all
+
+`afl` lists all  functions
+
+`pdf @function` views function structure
+
+`px @rsi` views value of registry
+
+`db 0x0040082c` sets breakpoint in specific point
+
+`dc` runs a program
+
+`ood 'argument'` sets an argument
