@@ -273,3 +273,8 @@ It is a three-way-handshake = SYN - SYN/ACK - ACK
 `dc` runs a program
 
 `ood 'argument'` sets an argument
+
+
+
+*
+`TTL` in domain name is `Time to Live` so a time, after which computer should request data of domain once again, instead of relying on copy from cache
