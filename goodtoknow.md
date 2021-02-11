@@ -277,4 +277,18 @@ It is a three-way-handshake = SYN - SYN/ACK - ACK
 
 
 *
-`TTL` in domain name is `Time to Live` so a time, after which computer should request data of domain once again, instead of relying on copy from cache
+`TTL` in domain name is `Time to Live` so a time, after which computer should request data of domain once again, instead of relying on copy from cache. Time is in seconds
+
+`Recursive` DNS is a server which stores cache of domain names, so that computer knows where to ask first.
+
+`root name server` is the one above `recursive` ones. Computer request info from it, if domain name is not stored in cache of `recursive`. There are `13` on whole world.
+
+`TLD = Top Level Domain` are servers which store info for specific extensions `.com` etc. They are above (like roots) recursive.
+
+`Authorative` name servers are used to store DNS records for domains directly. 
+
+*
+
+DNS request goes like this: `computer` asks `recursive` --> `root name` points where is a domain and gives response back --> recursive points to `top level domain` to get `extension` which responds back --> 
+
+`recursive` request an `authorative` which has all parameters abotu domain 
