@@ -289,6 +289,11 @@ It is a three-way-handshake = SYN - SYN/ACK - ACK
 
 *
 
-DNS request goes like this: `computer` asks `recursive` --> `root name` points where is a domain and gives response back --> recursive points to `top level domain` to get `extension` which responds back --> 
+DNS request goes like this: `computer` checks `local cache`, then if nothing found requests `recursive` --> `root name` points where is a domain and gives response back --> recursive points to `top level domain` to get `extension` which responds back --> 
 
 `recursive` request an `authorative` which has all parameters abotu domain 
+
+
+
+*
+`-d` stands for `data` in curl POST request e.g `curl -X POST -d "flag_please"
