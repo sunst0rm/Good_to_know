@@ -296,4 +296,6 @@ DNS request goes like this: `computer` checks `local cache`, then if nothing fou
 
 
 *
-`-d` stands for `data` in curl POST request e.g `curl -X POST -d "flag_please"
+`-d` stands for `data` in curl POST request e.g `curl -X POST -d "flag_please"`
+
+`-c` stands for `cookie-jar` and is used in getting a cookie from website e.g `curl -c -  'http://10.10.224.132:8081/ctf/getcookie' `
