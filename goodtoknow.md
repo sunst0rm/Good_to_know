@@ -300,4 +300,14 @@ DNS request goes like this: `computer` checks `local cache`, then if nothing fou
 
 `-c` stands for `cookie-jar` and is used in getting a cookie from website e.g `curl -c -  '$IP' `
 
-`-b` sets a cookie, using GET requests e.g `curl -b "Name=Value" $IP"
+`-b` sets a cookie, using GET requests e.g `curl -b "Name=Value" $IP"`
+
+
+
+*
+If there is `.yml` file involved, it is good to check if  `yaml deserialization attack` in python is possible
+
+
+
+*
+`pspy` is a tool which shows processes, crons run by all users on machine
