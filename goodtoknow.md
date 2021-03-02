@@ -371,3 +371,8 @@ Python revererse shell one liner
 <br />
 
 `network.security.ports.banned.override`  allows to view http even if it is on other port than 80
+
+<br />
+<br />
+
+If `/usr/bin/strings` has `suid` bit set, then for sure it is a way to get root
