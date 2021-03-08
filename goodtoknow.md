@@ -376,3 +376,10 @@ Python revererse shell one liner
 <br />
 
 If `/usr/bin/strings` has `suid` bit set, then for sure it is a way to get root
+
+<br />
+<br />
+
+`sed` is a nice tool ro remove characters from file. 
+
+Syntax is `sed 's/find/replace/' file`
