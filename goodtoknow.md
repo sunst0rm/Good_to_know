@@ -406,3 +406,13 @@ show tables - shows collections
 db.collection.find() - shows records
 
 Mongo jest podatne na nosql injection przez operatory jak $ne itp.
+
+<br />
+<br />
+
+Node zaleznie od wersji jest podatny na RCE, mozna podrobic wartosc cookie.
+
+https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/
+
+<br />
+<br />
