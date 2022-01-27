@@ -466,3 +466,9 @@ rsync -ahv ./id_rsa.pub rsync://RSYNCUSER@IP:873/DIRECTORY/USER/.ssh/authorized_
 
 <br />
 <br />
+
+SSH TUNNEL REDIRECTION
+
+ssh -i id_rsa -L 8111:127.0.0.1:8111 USER@IP
+
+--> using id_rsa we have to a server, we can redirect service from 8111 to local machine
