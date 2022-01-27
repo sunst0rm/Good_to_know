@@ -459,3 +459,10 @@ rsync -av --list-only rsync://10.10.158.27:873
 rsync -av rsync://USER@IP:873/DIRECTORY ./rsync
 
 --> connnects as a user and copies locally the directory
+
+rsync -ahv ./id_rsa.pub rsync://RSYNCUSER@IP:873/DIRECTORY/USER/.ssh/authorized_keys --inplace --no-o --no-g
+
+--> copies our ssh to target user's ssh
+
+<br />
+<br />
