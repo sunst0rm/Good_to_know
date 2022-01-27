@@ -446,3 +446,16 @@ LRANGE marketlist 1 20
 
 --> shows key and range from to
 
+<br />
+<br />
+
+RSYNC
+
+
+rsync -av --list-only rsync://10.10.158.27:873
+
+--> list files accessible via rsync
+
+rsync -av rsync://USER@IP:873/DIRECTORY ./rsync
+
+--> connnects as a user and copies locally the directory
