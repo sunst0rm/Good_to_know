@@ -433,3 +433,16 @@ get file
 
 <br />
 <br />
+
+REDIS
+
+sudo apt install redis-tools -y
+
+redis-cli -h IP -a password
+
+--> connnects zith remote redis
+
+LRANGE marketlist 1 20
+
+--> shows key and range from to
+
