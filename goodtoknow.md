@@ -416,3 +416,20 @@ https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-f
 
 <br />
 <br />
+
+SAMBA
+
+smbclient -L  \\\\10.10.158.27\\ -N
+
+--> lists samba shares
+
+smbclient \\\\10.10.158.27\\shares\\ -N
+
+--> accesses specified share
+
+get file
+
+--> downloads specified file
+
+<br />
+<br />
