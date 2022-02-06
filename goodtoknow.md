@@ -511,3 +511,10 @@ and get info we need.
 docker run -v /:/mnt --rm -it alpine chroot /mnt sh
 
 only if docker.sock has a sticky bit!!
+
+<br />
+<br />
+
+curl IP/.well-known/security.txt
+
+-->file with security info about reporting bugs etc.
