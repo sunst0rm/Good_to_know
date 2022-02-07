@@ -49,6 +49,11 @@ Finds all files with IP address inside it:
 
  find / -exec grep -l '[0-9][0-9]*[.][0-9][0-9]*[.][0-9][0-9]*[.][0-9][0-9]*' {} \; -type f 2>/dev/null
 
+Finds while which has specific shasum
+
+find / -type f -exec sha1sum {} \; 2>/dev/null | grep 9d54da7584015647ba052173b84d45e8007eba94
+
+
 
 <br />
 <br />
