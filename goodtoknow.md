@@ -54,6 +54,12 @@ Finds while which has specific shasum
 find / -type f -exec sha1sum {} \; 2>/dev/null | grep 9d54da7584015647ba052173b84d45e8007eba94
 
 
+Finds all files owned by UID 502
+
+find / -type f -uid 502 2>/dev/null
+
+
+
 
 <br />
 <br />
