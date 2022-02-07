@@ -45,6 +45,11 @@ Listing all binaries with suid permission
 
 `find / -perm -u=s -type f 2>/dev/null`
 
+Finds all files with IP address inside it:
+
+ find / -exec grep -l '[0-9][0-9]*[.][0-9][0-9]*[.][0-9][0-9]*[.][0-9][0-9]*' {} \; -type f 2>/dev/null
+
+
 <br />
 <br />
 
