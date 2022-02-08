@@ -554,3 +554,11 @@ shows content of file in another terminal with netcat
 If we have id_rsa.pub of a user, there should be some cron which sends it to authorized_keys
 
 Therefore, we copy our id_rsa.pub to user's and should be able to get into server
+
+<br />
+<br />
+
+When the shell exits the update command is actually executed.
+
+sudo apt-get update -o APT::Update::Pre-Invoke::=/bin/sh
+
