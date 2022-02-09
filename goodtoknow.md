@@ -214,6 +214,10 @@ Finding password knowing username:
 
 $SERVICE --> ssh, ftp...
 
+hydra -l bob -P 1000_common_passwords.txt -s 8080 http-get /protected
+
+bruteforces site directly
+
 <br />
 <br />
 
