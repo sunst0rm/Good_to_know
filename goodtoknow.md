@@ -466,6 +466,14 @@ LRANGE marketlist 1 20
 
 --> shows key and range from to
 
+It is possible to get RCE on Redis by ssh, webshell, crontab
+
+https://book.hacktricks.xyz/pentesting/6379-pentesting-redis
+
+
+
+
+
 <br />
 <br />
 
