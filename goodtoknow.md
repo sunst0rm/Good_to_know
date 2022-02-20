@@ -34,9 +34,15 @@ Getting rev shell when there is a chance to write a comment XSS
 <br />
 <br />
 
-SPAWNING INTTERACTING SHELL WITH PYTHON
+SPAWNING INTTERACTING SHELL:
 
+export TERM=xterm
+which python3 [ Will allow to know what python is installed ]
 python3 -c 'import pty;pty.spawn("/bin/bash")'
+press CTRL+Z to bcakground the shell and also run the command on attacker machine
+stty raw -echo ; fg
+reset
+
 
 <br />
 <br />
