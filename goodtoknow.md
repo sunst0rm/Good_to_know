@@ -637,3 +637,7 @@ Popular SQL injection payload
 
 admin' or '1'='1'#"
 
+<br />
+<br />
+
+Cyberchef has MAGIC option which discovers encryption method
